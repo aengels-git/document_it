@@ -1,0 +1,10 @@
+library(devtools)
+library(purrr)
+setwd("C:/Users/alex-/Documents/Methodik/Github R Pakete/document_it")
+document()
+usethis::use_description()
+walk(c("R6"),function(current_package){
+  usethis::use_package(current_package)
+})
+getwd()
+help("document")
