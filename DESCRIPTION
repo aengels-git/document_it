@@ -33,4 +33,5 @@ Depends:
     rmarkdown,
     reactable,
     forcats,
-    readr
+    readr,
+    DT
