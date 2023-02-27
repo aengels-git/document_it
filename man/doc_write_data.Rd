@@ -4,14 +4,14 @@
 \alias{doc_write_data}
 \title{doc_write_data}
 \usage{
-doc_write_data(data, milestone, file, id = NA_character_, ...)
+doc_write_data(data, file, milestone, id = NA_character_, ...)
 }
 \arguments{
 \item{data}{}
 
-\item{milestone}{}
-
 \item{file}{}
+
+\item{milestone}{}
 
 \item{id}{}
 

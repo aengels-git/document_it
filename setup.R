@@ -8,3 +8,4 @@ walk(c("R6"),function(current_package){
 })
 getwd()
 help("document")
+install_github("aengels-git/documentkit")

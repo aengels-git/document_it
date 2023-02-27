@@ -166,9 +166,9 @@ Report<-R6Class("Report",
                   reload = function(){
                     content <- readLines(self$filename)
                     header_range <- which(str_detect(content,"^---|---$"))
-                    classes <- map_chr(md$data$objects,~class(.x)[1])
+                    classes <- map_chr(self$data$objects,~class(.x)[1])
                     
-                    self$data <- rbind(md$data[which(str_detect(classes,"Header|Footer")),],tibble(
+                    self$data <- rbind(self$data[which(str_detect(classes,"Header|Footer")),],tibble(
                       type=c("text"),
                       objects=list(MdText$new(text=str_c(content[-c(header_range[1]:header_range[2])],collapse = "\n"),level=0))
                     ))

@@ -31,4 +31,6 @@ Depends:
     ggplot2,
     dplyr,
     rmarkdown,
-    reactable
+    reactable,
+    forcats,
+    readr

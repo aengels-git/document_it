@@ -64,7 +64,7 @@ doc_read_data<-function(file,milestone,sep = ",",encoding = "UTF-8",sheet=NULL,p
 #' @export
 #'
 #' @examples
-doc_write_data<-function(data,milestone, file,id=NA_character_,...){
+doc_write_data<-function(data, file, milestone,id=NA_character_,...){
   file<-fs::path_abs(file)
   extension<-fs::path_ext(file)
   if(!extension %in% c("csv","xlsx","json","rds","parquet")){
